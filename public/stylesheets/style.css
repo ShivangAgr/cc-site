@@ -1,0 +1,155 @@
+body {
+	overflow-x: hidden;
+	background-color: #e9ecef;
+}
+
+nav {
+	background-color: #e9ecef;
+}
+
+nav .container {
+	background: none;
+}
+
+#logo {
+	height: 60px;
+	width: 60px;
+}
+
+#brand {
+	font-family: 'Lobster', Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2em;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+p{
+	font-family: 'Comfortaa', Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+	font-family: 'Lobster', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.event-div {
+	padding: 1em;
+	/* background-color: #338e9944; */
+	border-style: solid;
+	border-width: 2px;
+	border-color: #333;
+	border-radius: 20px;
+}
+
+.carousel-caption{
+	font-family: 'Lobster', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#more1, #more2, #more3, #more4, #more5, #more6, #more7 { display: none; }
+
+.sideSlide{
+	padding: 1em;
+}
+
+.sideCaption{
+	font-family: 'Comfortaa';
+}
+
+.jumbotron {
+	border-radius: 0;
+	box-shadow: inset 0 0 200px #00727f77;
+	/* backdrop-filter: blur(100px); */
+	background-image: radial-gradient(#077 8%, transparent 0), radial-gradient(#077 8%, transparent 0);
+	background-size: 60px 60px;
+	background-position: 0 0, 30px 30px;
+}
+
+.page-footer {
+	background-color: #333;
+	color: #eee;
+}
+
+.fa {
+	padding: 10px;
+	font-size: 20px;
+	width: 36px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	color: white;
+	opacity: 0.8;
+	box-shadow: 0 0 5px #ffffff66;
+}
+
+.fa-youtube {
+	background: #ff0000;
+	background: linear-gradient(45deg, #f00, #f77);
+	color: white;
+}
+
+.fa-instagram {
+	background: #125688;
+	background: linear-gradient(45deg, #158, #37a);
+	color: white;
+}
+
+.fa-linkedin {
+	background: #0077b5;
+	background: linear-gradient(45deg, #07b, #29d);
+	color: white;
+}
+
+footer {
+	margin-top: 60px;
+	z-index: 2;;
+	position: relative;
+}
+
+footer .bubbles {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1rem;
+	background: #333;
+	filter: url("#blob");
+}
+
+footer .bubbles .bubble {
+	position: absolute;
+	left: var(--position, 50%);
+	background: #333;
+	border-radius: 100%;
+	animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+	transform: translate(-50%, 100%);
+}
+
+@keyframes bubble-size {
+
+	0%,
+	75% {
+		width: var(--size, 4rem);
+		height: var(--size, 4rem);
+	}
+
+	100% {
+		width: 0rem;
+		height: 0rem;
+	}
+}
+
+@keyframes bubble-move {
+	0% {
+		bottom: -4rem;
+	}
+
+	100% {
+		bottom: var(--distance, 10rem);
+	}
+}
