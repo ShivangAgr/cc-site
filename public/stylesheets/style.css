@@ -140,6 +140,12 @@ h2{
 	color: white;
 }
 
+.fa-twitter {
+	background: #1da1f2;
+	background: linear-gradient(45deg, #1ae, #3cf);
+	color: white;
+}
+
 .fa-facebook {
 	background: #4267b2;
 	background: linear-gradient(45deg, #47b, #69d);
