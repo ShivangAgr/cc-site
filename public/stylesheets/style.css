@@ -16,10 +16,28 @@ nav .container {
 	width: 60px;
 }
 
+@media (max-width: 900px) {
+	#logo {
+		height: 40px;
+		width: 40px;
+	}
+}
+
+.navbar-brand {
+	display: flex;
+	align-items: center;
+}
+
 #brand {
 	font-family: 'Comfortaa', Georgia, 'Times New Roman', Times, serif;
-	letter-spacing: 0.15em;
+	letter-spacing: 0.04em;
 	font-size: 2em;
+}
+
+@media (max-width: 900px) {
+	#brand {
+		font-size: 1em;
+	}
 }
 
 .navbar-toggler {
@@ -64,6 +82,12 @@ h2{
 	animation: twinkle 6s cubic-bezier(1, 0, 1, 0) infinite alternate;
 	background-size: 60px 60px;
 	background-position: 0 0, 30px 30px;
+}
+
+@media (max-width: 900px) {
+	.jumbotron h4 {
+		font-size: 1.2em;
+	}
 }
 
 @keyframes twinkle {
@@ -146,6 +170,12 @@ footer .bubbles {
 	height: 1rem;
 	background: #333;
 	filter: url("#blob");
+}
+
+@media (max-width: 900px) {
+	footer .bubbles {
+		display: none;
+	}
 }
 
 footer .bubbles .bubble {
