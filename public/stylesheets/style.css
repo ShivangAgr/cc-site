@@ -52,13 +52,10 @@ h2{
 	font-family: 'Lobster', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.event-div {
-	padding: 1em;
+.event-div .row {
 	/* background-color: #338e9944; */
-	border-style: solid;
-	border-width: 2px;
-	border-color: #333;
-	border-radius: 20px;
+	border: solid 2px #333;
+	border-radius: 24px;
 }
 
 .carousel-caption{
